@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>星海图高继扬访谈 - 思维导图</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --ink: #172033;
+      --muted: #64748b;
+      --line: #dde6f1;
+      --card: #fff;
+      --blue-bg: #edf6ff;
+      --blue: #3578bf;
+      --green-bg: #effaf4;
+      --green: #2f8c62;
+      --amber-bg: #fff8ea;
+      --amber: #ad7629;
+      --rose-bg: #fff1f3;
+      --rose: #bf5b68;
+      --violet-bg: #f5f1ff;
+      --violet: #765dc2;
+      --cyan-bg: #ecfbff;
+      --cyan: #22879a;
+      --shadow: 0 12px 28px rgba(15, 23, 42, .08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
+      background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        var(--bg);
+      background-size: 32px 32px;
+    }
+    header {
+      padding: 28px 34px 18px;
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid #e2e8f0;
+    }
+    h1 { margin: 0; font-size: 26px; line-height: 1.25; }
+    header p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+    main { max-width: 1260px; margin: 0 auto; padding: 28px; }
+    .root {
+      width: min(780px, 100%);
+      margin: 0 auto 28px;
+      padding: 24px 28px;
+      border-radius: 12px;
+      background: #172235;
+      color: #fff;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .root h2 { margin: 0 0 8px; font-size: 24px; }
+    .root p { margin: 0; color: #d9e2ee; line-height: 1.7; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+    section {
+      padding: 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      background: rgba(255,255,255,.94);
+      box-shadow: var(--shadow);
+    }
+    h3 {
+      margin: 0 0 12px;
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    .node {
+      margin-top: 10px;
+      padding: 13px 14px;
+      border: 1px solid #e5eaf2;
+      border-left-width: 5px;
+      border-radius: 8px;
+      background: var(--card);
+    }
+    .node strong { display: block; margin-bottom: 5px; font-size: 15px; }
+    .node span { display: block; color: var(--muted); font-size: 13px; line-height: 1.6; }
+    .blue h3 { background: var(--blue-bg); color: var(--blue); }
+    .blue .node { border-left-color: var(--blue); }
+    .green h3 { background: var(--green-bg); color: var(--green); }
+    .green .node { border-left-color: var(--green); }
+    .amber h3 { background: var(--amber-bg); color: var(--amber); }
+    .amber .node { border-left-color: var(--amber); }
+    .rose h3 { background: var(--rose-bg); color: var(--rose); }
+    .rose .node { border-left-color: var(--rose); }
+    .violet h3 { background: var(--violet-bg); color: var(--violet); }
+    .violet .node { border-left-color: var(--violet); }
+    .cyan h3 { background: var(--cyan-bg); color: var(--cyan); }
+    .cyan .node { border-left-color: var(--cyan); }
+    footer { max-width: 1260px; margin: 0 auto; padding: 0 28px 30px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 980px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 680px) {
+      header { padding: 22px 18px 14px; }
+      main { padding: 18px; }
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>星海图高继扬访谈</h1>
+    <p>物理世界 AI、自动驾驶经验、真实数据、场景落地与组织取舍</p>
+  </header>
+  <main>
+    <div class="root">
+      <h2>机器人创业，要把头伸到土里</h2>
+      <p>这期的主线，是高继扬如何把 Waymo 和 Momenta 的训练，转化成星海图的整机、数据、模型和客户价值体系。</p>
+    </div>
+    <div class="grid">
+      <section class="blue">
+        <h3>行业选择</h3>
+        <div class="node"><strong>AI 是绝对变量</strong><span>高继扬选择物理世界 AI，因为没有 AI，这个行业就不成立。</span></div>
+        <div class="node"><strong>从自动驾驶到具身智能</strong><span>自动驾驶是第一代物理世界 AI，机器人是下一轮更复杂的生产力系统。</span></div>
+        <div class="node"><strong>技术窗口</strong><span>GPT 重新点燃社会对 AI 的相信，端侧算力和传感器也从自动驾驶链条里成熟起来。</span></div>
+      </section>
+      <section class="green">
+        <h3>两段训练</h3>
+        <div class="node"><strong>Waymo</strong><span>工程师天堂、人才密度高、工程体系强，但 AI native 架构切换偏慢。</span></div>
+        <div class="node"><strong>Momenta</strong><span>结果导向、客户交付、量产压力，把 research 团队推向产品公司。</span></div>
+        <div class="node"><strong>鲶鱼角色</strong><span>高继扬在多个模块间切换，练出快速进入陌生领域和拆问题的能力。</span></div>
+      </section>
+      <section class="amber">
+        <h3>技术路线</h3>
+        <div class="node"><strong>端到端</strong><span>坚持数据驱动和端到端，减少传统模块化系统的复杂拆分。</span></div>
+        <div class="node"><strong>真实数据</strong><span>真机、真实场景、真实操作是主线；仿真和视频数据作为补充。</span></div>
+        <div class="node"><strong>双系统</strong><span>VLM 拆指令，VLA 做动作；动作模型要在端侧执行，避免延迟问题。</span></div>
+      </section>
+      <section class="rose">
+        <h3>产品路径</h3>
+        <div class="node"><strong>早期调整</strong><span>配送场景太早，星海图转向双臂操作和开发者市场。</span></div>
+        <div class="node"><strong>三件产品</strong><span>整机、基础模型、后训练工具共同构成面向开发者和场景客户的供给。</span></div>
+        <div class="node"><strong>场景标准</strong><span>速度要求适中、失效成本低、全球统一、有规模爆发力。</span></div>
+      </section>
+      <section class="violet">
+        <h3>壁垒判断</h3>
+        <div class="node"><strong>算法传播快</strong><span>算法创新重要，但论文和开源让传播周期缩短，壁垒有限。</span></div>
+        <div class="node"><strong>慢变量更硬</strong><span>整机供应链、数据体系、客户渠道的传播周期更长。</span></div>
+        <div class="node"><strong>客户价值</strong><span>开发者市场也是客户价值，能避免技术团队变成大型研究院。</span></div>
+      </section>
+      <section class="cyan">
+        <h3>组织与融资</h3>
+        <div class="node"><strong>战功文化</strong><span>资源向有结果的人倾斜，同时强调实事求是和务实创新。</span></div>
+        <div class="node"><strong>许华哲离开</strong><span>星海图支持其探索 To C 和家庭应用，并以投资方式延续关系。</span></div>
+        <div class="node"><strong>关键 bet</strong><span>接下来最重要的目标，是在生产力场景做到万台出货。</span></div>
+      </section>
+    </div>
+  </main>
+  <footer>生成自小宇宙单集：132. 对星海图创始人高继扬的3小时访谈</footer>
+</body>
+</html>
