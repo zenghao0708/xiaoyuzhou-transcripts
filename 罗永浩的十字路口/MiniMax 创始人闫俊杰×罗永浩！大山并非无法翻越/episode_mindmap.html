@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiniMax 创始人闫俊杰 x 罗永浩 - 思维导图</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5d6b82;
+      --line: #dbe4f0;
+      --bg: #f7f9fc;
+      --blue: #eaf3ff;
+      --green: #eaf8f0;
+      --amber: #fff5de;
+      --rose: #fff0f1;
+      --violet: #f3efff;
+      --cyan: #e9f8fb;
+      --mint: #eef9f4;
+      --paper: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(91, 118, 164, .06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(91, 118, 164, .06) 1px, transparent 1px),
+        var(--bg);
+      background-size: 28px 28px;
+    }
+    header {
+      padding: 32px clamp(20px, 4vw, 56px) 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, .86);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(26px, 4vw, 44px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 28px clamp(18px, 4vw, 48px) 48px;
+    }
+    .center {
+      background: #13213a;
+      color: #fff;
+      border-radius: 8px;
+      padding: 22px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 14px 32px rgba(20, 38, 70, .14);
+    }
+    .center h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+    }
+    .center p {
+      margin: 0;
+      color: #d7e2f5;
+      line-height: 1.7;
+      max-width: 900px;
+    }
+    .map {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      align-items: stretch;
+    }
+    section {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      padding: 16px;
+      box-shadow: 0 8px 20px rgba(30, 48, 80, .06);
+      min-height: 220px;
+    }
+    section h3 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+    .node {
+      padding: 10px 12px;
+      border-radius: 6px;
+      margin: 10px 0;
+      border: 1px solid rgba(23, 32, 51, .08);
+      background: rgba(255, 255, 255, .58);
+    }
+    .node strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    .node span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .blue { background: var(--blue); }
+    .green { background: var(--green); }
+    .amber { background: var(--amber); }
+    .rose { background: var(--rose); }
+    .violet { background: var(--violet); }
+    .cyan { background: var(--cyan); }
+    .mint { background: var(--mint); }
+    .wide { grid-column: span 2; }
+    .timeline {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .tick {
+      background: rgba(255,255,255,.78);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .tick b {
+      display: block;
+      color: #2f5da8;
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+    .tick span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    @media (max-width: 980px) {
+      .map, .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      header { position: static; }
+      .map, .timeline { grid-template-columns: 1fr; }
+      .wide { grid-column: span 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MiniMax 创始人闫俊杰 x 罗永浩</h1>
+    <p class="subtitle">231 分钟访谈：从多模态路线、产品角色、组织设计，到中国大模型公司的长期机会。</p>
+  </header>
+  <main>
+    <div class="center">
+      <h2>中心线索：把模型、产品和组织一起训练</h2>
+      <p>MiniMax 的路线不是只追单点模型指标。它把 AGI 理解成动态输入和动态输出，因此同时推进文本、语音、视频和音乐，并用组织、产品、成本和渠道来承接模型能力。</p>
+    </div>
+    <div class="map">
+      <section class="blue">
+        <h3>多模态路线</h3>
+        <div class="node"><strong>语音、视频、文本</strong><span>闫俊杰认为 MiniMax 已在多个模态进入国际领先梯队。</span></div>
+        <div class="node"><strong>动态输入输出</strong><span>AGI 的终局会融合多种模态，今天的分散市场可能合并。</span></div>
+        <div class="node"><strong>先走通再整合</strong><span>创业早期没有成熟路线，只能逐个模态建立能力。</span></div>
+      </section>
+      <section class="green">
+        <h3>模型竞争</h3>
+        <div class="node"><strong>经济约束</strong><span>推理成本、延迟和商业价值决定模型取舍。</span></div>
+        <div class="node"><strong>不会快速通吃</strong><span>对话、代码、视频、agent 等能力各有优势模型。</span></div>
+        <div class="node"><strong>中国机会</strong><span>效果差距缩小，成本优势和开源生态提供空间。</span></div>
+      </section>
+      <section class="amber">
+        <h3>产品角色变化</h3>
+        <div class="node"><strong>模型是核心产品</strong><span>App、API 和合作伙伴产品更像渠道。</span></div>
+        <div class="node"><strong>产品经理做原型</strong><span>从写 PRD 等排期，变成直接拿 demo 验证想法。</span></div>
+        <div class="node"><strong>边界变模糊</strong><span>算法、产品、开发在不同阶段轮流主导。</span></div>
+      </section>
+      <section class="rose">
+        <h3>创业与信任</h3>
+        <div class="node"><strong>ChatGPT 前创业</strong><span>闫俊杰在 GPT-3.5 爆发前一年押注通用模型。</span></div>
+        <div class="node"><strong>阶段性兑现</strong><span>融资和团队信任来自严肃承诺的持续兑现。</span></div>
+        <div class="node"><strong>留住顶尖人才</strong><span>薪酬要到位，意义感和成就机会也很关键。</span></div>
+      </section>
+      <section class="violet">
+        <h3>组织像模型</h3>
+        <div class="node"><strong>多样性与熵</strong><span>组织也需要探索空间，否则上限会被压低。</span></div>
+        <div class="node"><strong>统一目标</strong><span>算法和基础设施要优化同一个目标。</span></div>
+        <div class="node"><strong>年轻人上场</strong><span>很多关键人才是第一份工作就在公司成长起来。</span></div>
+      </section>
+      <section class="cyan">
+        <h3>C 端产品</h3>
+        <div class="node"><strong>Talkie / 海螺</strong><span>产品提供真实用户和真实场景，也检验模型体验。</span></div>
+        <div class="node"><strong>用户数据边界</strong><span>数据多不自动等于模型强，关键是智能定义更精准。</span></div>
+        <div class="node"><strong>海外市场</strong><span>AI 应用最先在海外爆发，国际化是核心标准之一。</span></div>
+      </section>
+      <section class="mint">
+        <h3>落地场景</h3>
+        <div class="node"><strong>语音克隆</strong><span>有陪伴和情绪价值，也需要严格验证和防滥用。</span></div>
+        <div class="node"><strong>AI 手机</strong><span>手机未来几年仍是主设备，AI native 体验还有空间。</span></div>
+        <div class="node"><strong>AI 实习生</strong><span>内部 agent 可读代码库、查线上环境、辅助 debug。</span></div>
+      </section>
+      <section class="blue">
+        <h3>长期问题</h3>
+        <div class="node"><strong>价值分配</strong><span>AI 产生的价值不能只集中在少数人手里。</span></div>
+        <div class="node"><strong>安全与监管</strong><span>5-10 年内仍由人控制，之后需要社会和技术方案。</span></div>
+        <div class="node"><strong>中国引领</strong><span>他希望看到中国公司在关键突破上真正引领。</span></div>
+      </section>
+    </div>
+    <div class="timeline">
+      <div class="tick"><b>00:00-00:30</b><span>多模态路线、模型即产品、市场不会快速通吃。</span></div>
+      <div class="tick"><b>00:30-01:15</b><span>产品经理未来、成长经历、读博和商汤阶段。</span></div>
+      <div class="tick"><b>01:15-02:00</b><span>ChatGPT 前创业、融资信任、组织多样性。</span></div>
+      <div class="tick"><b>02:00-02:45</b><span>C 端产品、用户数据、海外市场、语音克隆。</span></div>
+      <div class="tick"><b>02:45-03:15</b><span>AI 手机、内部 agent、算法和基础设施一体化。</span></div>
+      <div class="tick"><b>03:15-03:51</b><span>中国模型机会、智能普惠、人类角色和长期愿景。</span></div>
+    </div>
+    <footer>生成自小宇宙单集《MiniMax 创始人闫俊杰 x 罗永浩！大山并非无法翻越》。</footer>
+  </main>
+</body>
+</html>
