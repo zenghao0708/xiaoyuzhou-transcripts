@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>142. 雨森的创投观察第2集 - 思维导图</title>
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --ink: #172033;
+      --muted: #667085;
+      --line: #d8dee8;
+      --blue: #dbeafe;
+      --blue-ink: #1d4ed8;
+      --green: #dcfce7;
+      --green-ink: #15803d;
+      --amber: #fef3c7;
+      --amber-ink: #a16207;
+      --rose: #ffe4e6;
+      --rose-ink: #be123c;
+      --violet: #ede9fe;
+      --violet-ink: #6d28d9;
+      --cyan: #cffafe;
+      --cyan-ink: #0e7490;
+      --shadow: 0 10px 28px rgba(15, 23, 42, .08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        var(--bg);
+      background-size: 34px 34px;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
+    }
+    header {
+      padding: 28px 32px 18px;
+      background: rgba(255,255,255,.92);
+      border-bottom: 1px solid #e5e7eb;
+      backdrop-filter: blur(12px);
+    }
+    h1 { margin: 0; font-size: 26px; line-height: 1.25; }
+    header p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+    main { max-width: 1240px; margin: 0 auto; padding: 28px; }
+    .root {
+      width: min(720px, 100%);
+      margin: 0 auto 28px;
+      padding: 24px 28px;
+      background: #111827;
+      color: #fff;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .root h2 { margin: 0 0 8px; font-size: 24px; }
+    .root p { margin: 0; color: #d1d5db; line-height: 1.7; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      align-items: stretch;
+    }
+    .branch {
+      background: rgba(255,255,255,.9);
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .branch h3 {
+      margin: 0 0 12px;
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    .node {
+      margin: 10px 0 0;
+      padding: 14px;
+      border: 1px solid #e5e7eb;
+      border-left-width: 5px;
+      border-radius: 10px;
+      background: var(--card);
+    }
+    .node strong { display: block; margin-bottom: 5px; font-size: 15px; }
+    .node span { display: block; color: var(--muted); font-size: 13px; line-height: 1.55; }
+    .blue h3 { background: var(--blue); color: var(--blue-ink); }
+    .blue .node { border-left-color: var(--blue-ink); }
+    .green h3 { background: var(--green); color: var(--green-ink); }
+    .green .node { border-left-color: var(--green-ink); }
+    .amber h3 { background: var(--amber); color: var(--amber-ink); }
+    .amber .node { border-left-color: var(--amber-ink); }
+    .rose h3 { background: var(--rose); color: var(--rose-ink); }
+    .rose .node { border-left-color: var(--rose-ink); }
+    .violet h3 { background: var(--violet); color: var(--violet-ink); }
+    .violet .node { border-left-color: var(--violet-ink); }
+    .cyan h3 { background: var(--cyan); color: var(--cyan-ink); }
+    .cyan .node { border-left-color: var(--cyan-ink); }
+    footer { max-width: 1240px; margin: 0 auto; padding: 0 28px 28px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 980px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 680px) {
+      header { padding: 22px 18px 14px; }
+      main { padding: 18px; }
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>142. 雨森的创投观察第2集</h1>
+    <p>Harness、下一个字节、2026 大机会与 Stanley Druckenmiller</p>
+  </header>
+  <main>
+    <section class="root">
+      <h2>AI 创业从模型叙事进入系统叙事</h2>
+      <p>强观点需要不断更新。真正的机会不只在模型能力，而在 Harness、任务价值、Agent 原生基础设施和组织形态。</p>
+    </section>
+    <section class="grid">
+      <article class="branch blue">
+        <h3>判断更新</h3>
+        <div class="node"><strong>Strong opinions, weakly held</strong><span>有明确判断，但不被公开表达绑住；外部前提变化后要更新。</span></div>
+        <div class="node"><strong>Return 时间线后移</strong><span>C 端订阅和广告低于预期，coding 企业价值改变回报节奏。</span></div>
+        <div class="node"><strong>能力突破像水烧开</strong><span>从不可用到可用常常跨过阈值，事前难预测哪一版会触发。</span></div>
+      </article>
+      <article class="branch green">
+        <h3>模型公司</h3>
+        <div class="node"><strong>Anthropic 的组织力</strong><span>围绕 coding 方向 top-down 执行，价值观和资源更集中。</span></div>
+        <div class="node"><strong>OpenAI 的创新种子</strong><span>自下而上探索多，但项目持续性和组织收束更分散。</span></div>
+        <div class="node"><strong>叙事持续轮换</strong><span>OpenAI、Gemini、Anthropic 和 Codex 的领先感会阶段性切换。</span></div>
+      </article>
+      <article class="branch amber">
+        <h3>Harness</h3>
+        <div class="node"><strong>不只是壳</strong><span>包含 context、runtime、tooling、权限、数据回流和任务轨迹。</span></div>
+        <div class="node"><strong>像 AI 时代的 OS</strong><span>模型更像处理器，Harness 决定模型如何进入真实工作流。</span></div>
+        <div class="node"><strong>数据飞轮</strong><span>Agentic 任务轨迹比普通聊天更接近训练和产品改进需要的信号。</span></div>
+      </article>
+      <article class="branch rose">
+        <h3>产品指标</h3>
+        <div class="node"><strong>DAU 不再唯一</strong><span>生产力产品的价值在于完成任务，而不是让用户反复打开。</span></div>
+        <div class="node"><strong>高价值任务</strong><span>少数深度用户和高价值工作，可能比大规模浅层访问更重要。</span></div>
+        <div class="node"><strong>魔法时刻</strong><span>AI 产品靠真实体感传播，补贴和投放不能替代好用。</span></div>
+      </article>
+      <article class="branch violet">
+        <h3>Agent 世界</h3>
+        <div class="node"><strong>让人拥有 Agent</strong><span>第一波机会是降低拥有和管理 Agent 的门槛。</span></div>
+        <div class="node"><strong>让 Agent 适应人类软件</strong><span>支付、账号、沙盒、computer use 都是过渡期基础设施。</span></div>
+        <div class="node"><strong>建设 Agent 原生设施</strong><span>未来需要更适合 Agent 的 API、CLI、微支付和权限系统。</span></div>
+      </article>
+      <article class="branch cyan">
+        <h3>组织与创业</h3>
+        <div class="node"><strong>团队变小</strong><span>AI native 公司在 PMF 阶段需要的人更少，职能边界更模糊。</span></div>
+        <div class="node"><strong>下一个字节不像字节</strong><span>移动互联网时代的 DAU、补贴和封闭生态，可能需要被重写。</span></div>
+        <div class="node"><strong>创新需要练习</strong><span>创业者要主动训练自己看新问题，而不是只复用旧打法。</span></div>
+      </article>
+    </section>
+  </main>
+  <footer>基于逐字稿整理，适合配合 episode_summary.md 阅读。</footer>
+</body>
+</html>
+

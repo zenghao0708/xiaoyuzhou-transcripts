@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harness时代AI-First组织架构 - 思维导图</title>
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --ink: #172033;
+      --muted: #667085;
+      --line: #d8dee8;
+      --blue: #dbeafe;
+      --blue-ink: #1d4ed8;
+      --green: #dcfce7;
+      --green-ink: #15803d;
+      --amber: #fef3c7;
+      --amber-ink: #a16207;
+      --rose: #ffe4e6;
+      --rose-ink: #be123c;
+      --violet: #ede9fe;
+      --violet-ink: #6d28d9;
+      --cyan: #cffafe;
+      --cyan-ink: #0e7490;
+      --shadow: 0 10px 28px rgba(15, 23, 42, .08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        var(--bg);
+      background-size: 34px 34px;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
+    }
+    header {
+      padding: 28px 32px 18px;
+      background: rgba(255,255,255,.92);
+      border-bottom: 1px solid #e5e7eb;
+      backdrop-filter: blur(12px);
+    }
+    h1 { margin: 0; font-size: 26px; line-height: 1.25; }
+    header p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+    main { max-width: 1240px; margin: 0 auto; padding: 28px; }
+    .root {
+      width: min(720px, 100%);
+      margin: 0 auto 28px;
+      padding: 24px 28px;
+      background: #111827;
+      color: #fff;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .root h2 { margin: 0 0 8px; font-size: 24px; }
+    .root p { margin: 0; color: #d1d5db; line-height: 1.7; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .branch {
+      background: rgba(255,255,255,.92);
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .branch h3 {
+      margin: 0 0 12px;
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    .node {
+      margin-top: 10px;
+      padding: 14px;
+      background: var(--card);
+      border: 1px solid #e5e7eb;
+      border-left-width: 5px;
+      border-radius: 10px;
+    }
+    .node strong { display: block; margin-bottom: 5px; font-size: 15px; }
+    .node span { display: block; color: var(--muted); font-size: 13px; line-height: 1.55; }
+    .blue h3 { background: var(--blue); color: var(--blue-ink); }
+    .blue .node { border-left-color: var(--blue-ink); }
+    .green h3 { background: var(--green); color: var(--green-ink); }
+    .green .node { border-left-color: var(--green-ink); }
+    .amber h3 { background: var(--amber); color: var(--amber-ink); }
+    .amber .node { border-left-color: var(--amber-ink); }
+    .rose h3 { background: var(--rose); color: var(--rose-ink); }
+    .rose .node { border-left-color: var(--rose-ink); }
+    .violet h3 { background: var(--violet); color: var(--violet-ink); }
+    .violet .node { border-left-color: var(--violet-ink); }
+    .cyan h3 { background: var(--cyan); color: var(--cyan-ink); }
+    .cyan .node { border-left-color: var(--cyan-ink); }
+    footer { max-width: 1240px; margin: 0 auto; padding: 0 28px 28px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 980px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 680px) {
+      header { padding: 22px 18px 14px; }
+      main { padding: 18px; }
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>E238｜Harness时代AI-First的组织架构</h1>
+    <p>从信任人到信任 AI，重新设计工作流和组织结构</p>
+  </header>
+  <main>
+    <section class="root">
+      <h2>AI-first 是组织重构，不是工具采购</h2>
+      <p>Harness 让 Agent 在真实业务中持续工作、自我修复、吸收反馈。人的位置从执行转向需求定义和结果审核。</p>
+    </section>
+    <section class="grid">
+      <article class="branch blue">
+        <h3>概念演进</h3>
+        <div class="node"><strong>Prompt engineering</strong><span>优化提示词，让模型给出更好回答。</span></div>
+        <div class="node"><strong>Context engineering</strong><span>优化上下文，让模型理解更复杂任务。</span></div>
+        <div class="node"><strong>Harness engineering</strong><span>围绕模型搭建工具、安全、反馈和自我修复系统。</span></div>
+      </article>
+      <article class="branch green">
+        <h3>系统范围</h3>
+        <div class="node"><strong>Tooling 与 sandbox</strong><span>工具调用、隔离环境、host service 交互和启动延迟都影响效果。</span></div>
+        <div class="node"><strong>Inference scaling</strong><span>给 Agent 更多时间、上下文和工具，也要防止退化和幻觉。</span></div>
+        <div class="node"><strong>Feedback loop</strong><span>产品、用户、市场和基础设施信号持续反馈给系统。</span></div>
+      </article>
+      <article class="branch amber">
+        <h3>AI-first</h3>
+        <div class="node"><strong>不是旧流程加工具</strong><span>每个人都用 AI，不一定让组织更快，可能提高对齐成本。</span></div>
+        <div class="node"><strong>围绕 AI 重写流程</strong><span>planning、testing、分析和回滚都要进入 AI 驱动链路。</span></div>
+        <div class="node"><strong>AI 主导对齐</strong><span>团队间的信息同步由系统承担，人减少反复会议和解释。</span></div>
+      </article>
+      <article class="branch rose">
+        <h3>信任机制</h3>
+        <div class="node"><strong>从信任人到信任 AI</strong><span>组织要敢让 AI 承担决策和执行的一部分。</span></div>
+        <div class="node"><strong>Guardrails</strong><span>测试、日志、回滚、监控和权限边界是信任的前提。</span></div>
+        <div class="node"><strong>AutoFixing</strong><span>Agent 根据错误、日志和测试信号修复部分问题。</span></div>
+      </article>
+      <article class="branch violet">
+        <h3>角色变化</h3>
+        <div class="node"><strong>产品经理被拆开</strong><span>产品能力分散到工程、市场和系统里，减少单点对齐成本。</span></div>
+        <div class="node"><strong>工程师 scope 拉长</strong><span>写代码前要判断，代码上线后要看影响和数据。</span></div>
+        <div class="node"><strong>复合型人才</strong><span>工程、产品、设计、市场能力开始融合，implementation 能力变重要。</span></div>
+      </article>
+      <article class="branch cyan">
+        <h3>人的价值</h3>
+        <div class="node"><strong>定义需求</strong><span>人决定什么值得做，AI 负责更大比例的执行。</span></div>
+        <div class="node"><strong>Review 结果</strong><span>判断结果是否符合人的利益、目标和边界。</span></div>
+        <div class="node"><strong>系统架构</strong><span>未来关键能力是搭建并维护 AI 驱动系统。</span></div>
+      </article>
+    </section>
+  </main>
+  <footer>基于逐字稿整理，适合配合 episode_summary.md 阅读。</footer>
+</body>
+</html>
+

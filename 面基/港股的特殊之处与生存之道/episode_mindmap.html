@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>港股的特殊之处与生存之道 - 思维导图</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --ink: #172033;
+      --muted: #667085;
+      --line: #d8dee8;
+      --blue: #dbeafe;
+      --blue-ink: #1d4ed8;
+      --green: #dcfce7;
+      --green-ink: #15803d;
+      --amber: #fef3c7;
+      --amber-ink: #a16207;
+      --rose: #ffe4e6;
+      --rose-ink: #be123c;
+      --violet: #ede9fe;
+      --violet-ink: #6d28d9;
+      --cyan: #cffafe;
+      --cyan-ink: #0e7490;
+      --shadow: 0 10px 28px rgba(15, 23, 42, .08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px),
+        var(--bg);
+      background-size: 34px 34px;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      letter-spacing: 0;
+    }
+    header {
+      padding: 28px 32px 18px;
+      background: rgba(255,255,255,.92);
+      border-bottom: 1px solid #e5e7eb;
+      backdrop-filter: blur(12px);
+    }
+    h1 { margin: 0; font-size: 26px; line-height: 1.25; }
+    header p { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+    main { max-width: 1240px; margin: 0 auto; padding: 28px; }
+    .root {
+      width: min(720px, 100%);
+      margin: 0 auto 28px;
+      padding: 24px 28px;
+      background: #111827;
+      color: #fff;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .root h2 { margin: 0 0 8px; font-size: 24px; }
+    .root p { margin: 0; color: #d1d5db; line-height: 1.7; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .branch {
+      background: rgba(255,255,255,.92);
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .branch h3 {
+      margin: 0 0 12px;
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    .node {
+      margin-top: 10px;
+      padding: 14px;
+      background: var(--card);
+      border: 1px solid #e5e7eb;
+      border-left-width: 5px;
+      border-radius: 10px;
+    }
+    .node strong { display: block; margin-bottom: 5px; font-size: 15px; }
+    .node span { display: block; color: var(--muted); font-size: 13px; line-height: 1.55; }
+    .blue h3 { background: var(--blue); color: var(--blue-ink); }
+    .blue .node { border-left-color: var(--blue-ink); }
+    .green h3 { background: var(--green); color: var(--green-ink); }
+    .green .node { border-left-color: var(--green-ink); }
+    .amber h3 { background: var(--amber); color: var(--amber-ink); }
+    .amber .node { border-left-color: var(--amber-ink); }
+    .rose h3 { background: var(--rose); color: var(--rose-ink); }
+    .rose .node { border-left-color: var(--rose-ink); }
+    .violet h3 { background: var(--violet); color: var(--violet-ink); }
+    .violet .node { border-left-color: var(--violet-ink); }
+    .cyan h3 { background: var(--cyan); color: var(--cyan-ink); }
+    .cyan .node { border-left-color: var(--cyan-ink); }
+    footer { max-width: 1240px; margin: 0 auto; padding: 0 28px 28px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 980px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 680px) {
+      header { padding: 22px 18px 14px; }
+      main { padding: 18px; }
+      .grid { grid-template-columns: 1fr; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>港股的特殊之处与生存之道</h1>
+    <p>离岸市场、资金结构、恒科、动量与风险管理</p>
+  </header>
+  <main>
+    <section class="root">
+      <h2>港股先学控回撤，再谈收益</h2>
+      <p>港股不是资金必选项，资金来去都有明确目的。它提供机会，也会放大波动和错误定价。</p>
+    </section>
+    <section class="grid">
+      <article class="branch blue">
+        <h3>离岸市场</h3>
+        <div class="node"><strong>可选项</strong><span>南下资金和外资可以来，也可以不来，进入需要理由。</span></div>
+        <div class="node"><strong>增强或互补</strong><span>资产要提供组合增强、弱相关、负相关或更高股息。</span></div>
+        <div class="node"><strong>资金走得坚决</strong><span>没有继续持有理由时，主动卖出和被动赎回会叠加。</span></div>
+      </article>
+      <article class="branch green">
+        <h3>资金结构</h3>
+        <div class="node"><strong>海外长线</strong><span>偏高质量、稳健增长，常与全球同类龙头比较。</span></div>
+        <div class="node"><strong>保险资金</strong><span>偏高股息和稳定分红，用来匹配负债端成本。</span></div>
+        <div class="node"><strong>对冲基金</strong><span>偏交易和波动，风浪越大机会越多。</span></div>
+      </article>
+      <article class="branch amber">
+        <h3>恒科</h3>
+        <div class="node"><strong>规模巨大</strong><span>泛恒科 ETF 用户心智很强，是很多人接触港股科技的入口。</span></div>
+        <div class="node"><strong>靠波动吸引人</strong><span>弹性带来参与热情，也带来反复回撤。</span></div>
+        <div class="node"><strong>不奖励长情</strong><span>短期浮盈不够多时，回撤可能已经开始。</span></div>
+      </article>
+      <article class="branch rose">
+        <h3>低估值</h3>
+        <div class="node"><strong>便宜不够</strong><span>低估值只是赔率，不能单独说明时间站在你这边。</span></div>
+        <div class="node"><strong>修复契机</strong><span>经营周期、市场风格、主题变化和股息率收敛都可能触发修复。</span></div>
+        <div class="node"><strong>下落飞刀</strong><span>基本面向下时，离岸市场会把估值打得很低。</span></div>
+      </article>
+      <article class="branch violet">
+        <h3>因子</h3>
+        <div class="node"><strong>动量有效</strong><span>离岸资金追逐趋势和弹性，动量因子长期表现突出。</span></div>
+        <div class="node"><strong>动量崩溃</strong><span>动量回撤很大，需要估值约束和止盈止损纪律。</span></div>
+        <div class="node"><strong>价值加动量</strong><span>用动量提高价值收益，用估值降低动量波动。</span></div>
+      </article>
+      <article class="branch cyan">
+        <h3>生存指南</h3>
+        <div class="node"><strong>主动基金看风控</strong><span>偏绝对收益、能再平衡、能控制回撤的管理人更关键。</span></div>
+        <div class="node"><strong>被动基金要主动</strong><span>高波动 ETF 需要交易纪律，不能假装自己在买现金流。</span></div>
+        <div class="node"><strong>择时看水温</strong><span>估值分位、海外流动性和港交所股息率可作为参考。</span></div>
+      </article>
+    </section>
+  </main>
+  <footer>基于逐字稿整理，仅作学习笔记，不构成投资建议。</footer>
+</body>
+</html>
+
